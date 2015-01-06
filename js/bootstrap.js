@@ -8,6 +8,6 @@ requirejs(
 		, 'config/route-config'
 	], function () {
 	angular.element(document).ready(function () {
-		angular.bootstrap(document, ['app']);
+		angular.bootstrap(document.querySelector('body'), ['app']);
 	});
 });

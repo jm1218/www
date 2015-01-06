@@ -3,6 +3,6 @@
  */
 define([], function () {
 	return function page1Ctrl() {
-		console.log('page21trl');
+		console.log('page1Ctrl');
 	};
 });

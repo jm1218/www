@@ -4,7 +4,7 @@
 define([], function () {
 	return function mainCtrl(someService, $log) {
 		$log.debug('mainCtrl');
-		$log.debug(someService.test1);
-		$log.debug(someService.test2);
+		$log.debug('service data : ' + someService.test1);
+		$log.debug('service data : ' + someService.test2);
 	};
 });
