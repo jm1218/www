@@ -3,9 +3,10 @@
  */
 define(
 	[
-		'controllers/mainCtrl',
-		'controllers/page1Ctrl',
-		'controllers/page2Ctrl'
+		'controllers/rootCtrl'
+		, 'controllers/mainCtrl'
+		, 'controllers/page1Ctrl'
+		, 'controllers/page2Ctrl'
 	]
 	, function () {
 

@@ -28,7 +28,7 @@ requirejs.config({
 		'ngCordova' : ['angular'],
 		'modules/controllers' : ['angular'],
 		'modules/services' : ['angular'],
-		'moudles/directives' : ['angular']
+		'modules/directives' : ['angular']
 	}
 });
 

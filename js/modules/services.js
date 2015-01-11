@@ -1,6 +1,7 @@
 define(
 	[
-		'services/someService'
+		'services/greetingService'
+		, 'services/someService'
 	]
 	, function () {
 

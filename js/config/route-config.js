@@ -7,17 +7,32 @@ define(['app'], function (app) {
 
 			.when('/main', {
 				templateUrl : 'partials/main.html',
-				controller : 'mainCtrl'
+				controller : 'mainCtrl',
+				resolve : {
+					greeting : function (greetingService) {
+						return greetingService.greeting();
+					}
+				}
 			})
 
 			.when('/page1', {
 				templateUrl : 'partials/page1.html',
-				controller : 'page1Ctrl'
+				controller : 'page1Ctrl',
+				resolve : {
+					greeting : function (greetingService) {
+						return greetingService.greeting();
+					}
+				}
 			})
 
 			.when('/page2', {
 				templateUrl : 'partials/page2.html',
-				controller : 'page2Ctrl'
+				controller : 'page2Ctrl',
+				resolve : {
+					greeting : function (greetingService) {
+						return greetingService.greeting();
+					}
+				}
 			})
 			.when('/someUrl', {});
 	});

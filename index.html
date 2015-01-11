@@ -8,9 +8,10 @@
 	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="yes" />
 	<link rel="stylesheet" href="libs/mobile-angular-ui/dist/css/mobile-angular-ui-base.min.css" />
+	<link rel="stylesheet" href="resources/css/loading.css">
 </head>
 
-<body>
+<body ng-controller="rootCtrl">
 <!-- Sidebars -->
 <div ng-include="'partials/sidebar.html'" class="sidebar sidebar-left"></div>
 
@@ -25,6 +26,9 @@
 			<div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle">
 				<i class="fa fa-bars"></i> Menu
 			</div>
+		</div>
+		<div class="btn-group pull-right" ui-yield-to="backButton">
+			<div class="btn" ng-back>Back Button</div>
 		</div>
 	</div>
 

@@ -7,6 +7,7 @@ requirejs(
 		, 'app'
 		, 'config/route-config'
 		, 'config/http-config'
+		, 'constants'
 	], function () {
 		angular.element(document).ready(function () {
 			angular.bootstrap(document.querySelector('body'), ['app']);

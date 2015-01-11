@@ -25,6 +25,7 @@ define(
 				, 'ngCordova'
 				, 'app.controllers'
 				, 'app.services'
+				, 'app.directives'
 			]
 		);
 	}
