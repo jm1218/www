@@ -3,11 +3,12 @@
  */
 requirejs(
 	[
-			'domReady!'
+		'domReady!'
 		, 'app'
 		, 'config/route-config'
+		, 'config/http-config'
 	], function () {
-	angular.element(document).ready(function () {
-		angular.bootstrap(document.querySelector('body'), ['app']);
+		angular.element(document).ready(function () {
+			angular.bootstrap(document.querySelector('body'), ['app']);
+		});
 	});
-});

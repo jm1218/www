@@ -13,9 +13,7 @@ requirejs.config({
 		'mobile-angular-ui' : '../libs/mobile-angular-ui/dist/js/mobile-angular-ui.min',
 		'ngCordova' : '../libs/ngCordova/dist/ng-cordova.min',
 		'domReady' : '../libs/requirejs-domready/domReady',
-		'controllerBase' : 'controllers/controllerBase',
-		'serviceBase' : 'services/serviceBase',
-		'directiveBase' : 'directives/directiveBase'
+		'app' : 'modules/app'
 	},
 	shim : {
 		'angular' : {
@@ -28,9 +26,9 @@ requirejs.config({
 		'angular-touch' : ['angular'],
 		'mobile-angular-ui' : ['angular'],
 		'ngCordova' : ['angular'],
-		'controllerBase' : ['angular'],
-		'serviceBase' : ['angular'],
-		'directiveBase' : ['angular']
+		'modules/controllers' : ['angular'],
+		'modules/services' : ['angular'],
+		'moudles/directives' : ['angular']
 	}
 });
 

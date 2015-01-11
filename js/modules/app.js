@@ -3,21 +3,21 @@
  */
 define(
 	[
-			'angular'
+		'angular'
 		, 'angular-animate'
 		, 'angular-cookies'
 		, 'angular-route'
 		, 'angular-touch'
 		, 'mobile-angular-ui'
 		, 'ngCordova'
-		, 'controllerBase'
-		, 'serviceBase'
-		, 'directiveBase'
+		, 'modules/controllers'
+		, 'modules/services'
+		, 'modules/directives'
 	]
 	, function (angular) {
 		return angular.module('app',
 			[
-					'ngAnimate'
+				'ngAnimate'
 				, 'ngCookies'
 				, 'ngRoute'
 				, 'ngTouch'
