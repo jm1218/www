@@ -1,4 +1,10 @@
-<div ui-content-for="backButton">
-	<div class="btn" ng-back="fn.backButtonHandler()">Back Button</div>
+<ul class="nav nav-tabs" ui-state='activeTab' ui-default='1'>
+	<li ng-repeat="i in [1,2,3]" ui-class="{'active': activeTab == i}" ui-scope-context="i">
+		<a ui-set="{'activeTab': i}">Tab {{i}}</a>
+	</li>
+</ul>
+
+<div ng-repeat="i in [1,2,3]" ui-if="activeTab == i" ui-scope-context="i">
+	<h3 class="page-header">Tab {{i}}</h3>
+	<!-- ... -->
 </div>
-<div>{{model.controllerName}}</div>

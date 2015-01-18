@@ -7,7 +7,7 @@ define([], function () {
 			var defer = $q.defer();
 			$timeout(function () {
 				defer.resolve('hello!!');
-			}, 2000);
+			}, 0);
 			return defer.promise;
 		};
 		return {
